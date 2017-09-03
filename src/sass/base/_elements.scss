@@ -1,0 +1,51 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+small,
+ul,
+li,
+span {
+  margin: 0;
+  padding: 0;
+  color: $c-black;
+}
+
+a {
+  color: $c-red;
+}
+
+body {
+  // border: 2vw solid #f7484e;
+  background-color: $c-canvas-temp;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.main__container {
+  max-width: 500px;
+  margin: 10vh auto 0 auto;
+  background-color: $c-bg-main;
+
+  min-height: 500px;
+
+  header {
+    background-color: $c-blue;
+  }
+}

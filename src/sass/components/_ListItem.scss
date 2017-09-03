@@ -1,0 +1,32 @@
+.list__item {
+  padding-left: 1rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  background-color: fade-out(lightgrey, 0.7);
+
+  &:hover {
+    background-color: fade-out(lightgrey, 0.3);
+  }
+}
+
+.list__item__info {
+  padding-top: 1rem;
+
+  h2 {
+    @include fluid-type(600px, 1400px, 18px, 24px);
+    border-bottom: 1px solid lightgrey;
+    font-weight: 600;
+    padding: 0.2rem 0rem 0.5rem 0;
+  }
+
+  p {
+    @include fluid-type(600px, 1400px, 16px, 18px);
+    font-weight: 400;
+
+    &:nth-of-type(2) {
+      font-style: italic;
+      @include fluid-type(600px, 1400px, 13px, 15px);
+      font-weight: 500;
+    }
+  }
+}
